@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+
+    <style>
+      div {
+        box-sizing: border-box;
+        width: 300px;
+        height: 30vh;
+        border-color: black;
+        border-style: solid;
+        overflow: auto;
+        transition: ease-in-out 60ms;
+      }
+      p {
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scrollbox">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+        libero, blanditiis perspiciatis repellendus placeat eveniet repellat
+        atque incidunt a quis accusamus natus consequatur vero nisi nesciunt sed
+        quasi nulla sit delectus iusto. Nulla, molestias autem. Odit numquam
+        iste asperiores quae esse pariatur earum, consequuntur consectetur
+        deleniti dolore dolorum nesciunt velit? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ipsum quos veritatis quod, laborum nihil
+        fugit iusto fugiat numquam nobis ad animi inventore aspernatur excepturi
+        cum placeat sit! Placeat, tempora quam! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Sunt ducimus obcaecati, ad deleniti qui
+        quasi corrupti suscipit perspiciatis quibusdam ut expedita inventore
+        tempora! Vitae itaque qui eveniet laudantium id cupiditate cum ad
+        voluptate? Veritatis iusto vero temporibus! Doloribus necessitatibus
+        facilis odio, deserunt illo aut temporibus nemo, praesentium repudiandae
+        vitae quisquam.
+      </p>
+    </div>
+    <script>
+      document
+        .getElementById("scrollbox")
+        .addEventListener("scroll", myFunction);
+
+      function myFunction() {
+        document.getElementById("scrollbox").style.backgroundColor = "red";
+        document.getElementById("scrollbox").style.color = "yellow";
+      }
+    </script>
+  </body>
+</html>
